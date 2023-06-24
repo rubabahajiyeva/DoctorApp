@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FigmaTask</string>
+    <string name="find_your_doctor"><font color="#25282B">Find </font> <font color="#4F4F4F">your doctor </font> </string>
+    <string name="search_doctor_medicines_etc">Search doctor, medicines etc</string>
+    <string name="consultation">Consultation</string>
+    <string name="dental">Dental</string>
+    <string name="heart">Heart</string>
+    <string name="hospitals">Hospitals</string>
+    <string name="medicines">Medicines</string>
+    <string name="physician">Physician</string>
+    <string name="skin">Skin</string>
+    <string name="surgeon">Surgeon</string>
+    <string name="top_doctors">Top Doctors</string>
+    <string name="make_an_appointment">Make an Appointment</string>
+</resources>

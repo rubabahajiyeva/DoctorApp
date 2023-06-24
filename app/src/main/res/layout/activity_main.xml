@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_main"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="62dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/menu_icon" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/person_image_main" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lato"
+        android:text="@string/find_your_doctor"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edit_text_background"
+        android:drawableRight="@drawable/search_icon"
+        android:ems="10"
+        android:hint="@string/search_doctor_medicines_etc"
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingTop="17dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/d_24"
+        app:layout_constraintEnd_toEndOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_0" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d_8"
+            android:fontFamily="@font/lato"
+            android:text="Consultation"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_1"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d_8"
+            android:fontFamily="@font/lato"
+            android:text="Dental"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_2"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d_8"
+            android:fontFamily="@font/lato"
+            android:text="Heart"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_3"
+            tools:layout_editor_absoluteX="288dp"
+            tools:layout_editor_absoluteY="182dp" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/d_8"
+            android:fontFamily="@font/lato"
+            android:text="Hospitals"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_4"
+            tools:layout_editor_absoluteX="41dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:text="Medicines"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_5"
+            tools:layout_editor_absoluteX="107dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:text="Physician"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_6"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:text="Skin"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_marginLeft="@dimen/d_23"
+            android:layout_marginRight="@dimen/d_23"
+            android:layout_marginBottom="@dimen/d_4"
+            android:src="@drawable/grid_item_7"
+            tools:layout_editor_absoluteX="288dp"
+            tools:layout_editor_absoluteY="281dp" />
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lato"
+            android:text="Surgeon"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </GridLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/top_doctors"
+        android:textColor="@color/grid_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+    <TextView
+        android:id="@+id/viewAll"
+        android:layout_width="wrap_content"
+        android:layout_height="14dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="View all"
+        android:textColor="@color/blue"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
