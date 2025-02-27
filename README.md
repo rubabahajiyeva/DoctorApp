@@ -5,7 +5,7 @@
 ## 📱 Ekran Görüntüləri
 
 **Əsas Səhifə:**
-![Əsas Səhifə](main_page.png)
+![Əsas Səhifə](app_pages_image/main_page)
 
 **Həkim Detalları Səhifəsi:**
 ![Detallar Səhifəsi](details_page.png)
