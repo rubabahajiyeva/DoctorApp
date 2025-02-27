@@ -8,7 +8,7 @@
 ![app_pages_image/main_page](https://github.com/rubabahajiyeva/DoctorApp/issues/1#issue-2885387297)
 
 **Həkim Detalları Səhifəsi:**
-![Detallar Səhifəsi]([details_page.png](https://github.com/rubabahajiyeva/DoctorApp/issues/2#issue-2885407013))
+![details_page.png](https://github.com/rubabahajiyeva/DoctorApp/issues/2#issue-2885407013)
 
 ## 🚀 Xüsusiyyətlər
 - 🔍 Həkim, dərman və xəstəxana axtarışı
