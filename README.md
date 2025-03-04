@@ -5,10 +5,10 @@
 ## 📱 Ekran Görüntüləri
 
 **Əsas Səhifə:**
-![app_pages_image/main_page](https://github.com/rubabahajiyeva/DoctorApp/issues/1#issue-2885387297)
+![app_pages_image/main_page](./screens/main-page.png)
 
 **Həkim Detalları Səhifəsi:**
-![details_page.png](https://github.com/rubabahajiyeva/DoctorApp/issues/2#issue-2885407013)
+![details_page.png](./screens/detail-page.png)
 
 ## 🚀 Xüsusiyyətlər
 - 🔍 Həkim, dərman və xəstəxana axtarışı
