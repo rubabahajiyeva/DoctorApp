@@ -4,11 +4,10 @@
 
 ## 📱 Ekran Görüntüləri
 
-**Əsas Səhifə:**
-![app_pages_image/main_page](./screens/main-page.png)
+| Doctor Details Screen          | Main Screen                    |
+| ------------------------------ | ------------------------------ |
+| ![doctor_details.png](./app//src/main/screens/page_1.png) | ![main_page.png](./app//src/main/screens/page_2.png) |
 
-**Həkim Detalları Səhifəsi:**
-![details_page.png](./screens/detail-page.png)
 
 ## 🚀 Xüsusiyyətlər
 - 🔍 Həkim, dərman və xəstəxana axtarışı
